@@ -6,15 +6,17 @@ module.exports = {
   tabWidth: 2,
   useTabs: false,
   semi: false,
-  singleQuote: false,
-  trailingComma: "none",
+  singleQuote: true,
+  trailingComma: 'none',
   bracketSpacing: true,
   bracketSameLine: true,
+  arrowParens: 'avoid',
   plugins: [
-    require.resolve("@plasmohq/prettier-plugin-sort-imports"),
-    require.resolve("prettier-plugin-svelte")
+    require.resolve('@plasmohq/prettier-plugin-sort-imports'),
+    require.resolve('prettier-plugin-svelte')
   ],
-  importOrder: ["^@plasmohq/(.*)$", "^~(.*)$", "^[./]"],
+  importOrder: ['^@plasmohq/(.*)$', '^~(.*)$', '^[./]'],
   importOrderSeparation: true,
-  importOrderSortSpecifiers: true
+  importOrderSortSpecifiers: true,
+  svelteSortOrder: 'options-scripts-markup-styles'
 }
