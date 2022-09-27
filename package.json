@@ -6,8 +6,18 @@
   "author": "lgvic",
   "packageManager": "pnpm@7.5.0",
   "scripts": {
+    "format": "prettier --write './src/**/*.{js,svelte,html,ts}'",
+    "lint": "eslint './src/**/*.{js,ts,svelte}'",
+    "lint:fix": "eslint --fix './src/**/*.{js,ts,svelte}'",
+    "prelint": "npm run format",
     "dev": "plasmo dev",
     "build": "plasmo build"
+  },
+  "lint-staged": {
+    "*.{js,ts,svelte}": [
+      "svelte-check",
+      "npm run lint:fix"
+    ]
   },
   "dependencies": {
     "plasmo": "0.47.1",
@@ -23,6 +33,8 @@
     "@typescript-eslint/parser": "^5.38.1",
     "eslint": "^8.24.0",
     "eslint-plugin-svelte3": "^4.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "2.7.1",
     "prettier-plugin-svelte": "^2.7.0",
     "typescript": "4.7.4"
