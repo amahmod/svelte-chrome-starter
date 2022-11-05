@@ -1,16 +1,16 @@
 {
-  "extends": "@tsconfig/svelte/tsconfig.json",
-  "exclude": ["node_modules"],
-  "include": [".plasmo/**/*", "./**/*.ts", "./**/*.tsx", "./**/*.svelte"],
-  "compilerOptions": {
-    "strict": true,
-    "paths": {
-      "~*": ["./src/*"]
-    },
-    "baseUrl": ".",
-    "lib": ["DOM", "ES2017", "WebWorker"],
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "importsNotUsedAsValues": "remove"
-  }
+    "extends": "@tsconfig/svelte/tsconfig.json",
+    "exclude": ["node_modules"],
+    "include": [".plasmo/**/*", "./**/*.ts", "./**/*.tsx", "./**/*.svelte"],
+    "compilerOptions": {
+        "strict": true,
+        "paths": {
+            "~*": ["./src/*"]
+        },
+        "baseUrl": ".",
+        "lib": ["DOM", "ES2017", "WebWorker"],
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "importsNotUsedAsValues": "remove"
+    }
 }
