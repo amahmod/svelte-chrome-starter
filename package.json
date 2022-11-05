@@ -11,7 +11,8 @@
     "lint:fix": "eslint --fix './src/**/*.{js,ts,svelte}'",
     "prelint": "npm run format",
     "dev": "plasmo dev",
-    "build": "plasmo build"
+    "build": "plasmo build && npm run zip",
+    "zip": "node scripts/build-zip.js"
   },
   "lint-staged": {
     "*.{js,ts,svelte}": [
@@ -31,6 +32,7 @@
     "@types/node": "18.0.3",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
+    "archiver": "^5.3.1",
     "eslint": "^8.26.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "husky": "^8.0.1",
