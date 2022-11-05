@@ -12,7 +12,8 @@
     "prelint": "npm run format",
     "dev": "plasmo dev",
     "build": "plasmo build && npm run zip",
-    "zip": "node scripts/build-zip.js"
+    "zip": "node scripts/build-zip.js",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,ts,svelte}": [
