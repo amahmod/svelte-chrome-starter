@@ -22,26 +22,26 @@
         ]
     },
     "dependencies": {
-        "plasmo": "0.58.0",
-        "svelte": "3.49.0",
-        "svelte-preprocess": "4.10.7"
+        "plasmo": "0.64.5",
+        "svelte": "3.55.1",
+        "svelte-preprocess": "5.0.1"
     },
     "devDependencies": {
-        "@plasmohq/prettier-plugin-sort-imports": "1.1.1",
+        "@plasmohq/prettier-plugin-sort-imports": "3.6.1",
         "@tsconfig/svelte": "^3.0.0",
-        "@types/chrome": "0.0.193",
-        "@types/node": "18.0.3",
-        "@typescript-eslint/eslint-plugin": "^5.42.0",
-        "@typescript-eslint/parser": "^5.42.0",
+        "@types/chrome": "0.0.212",
+        "@types/node": "18.13.0",
+        "@typescript-eslint/eslint-plugin": "^5.51.0",
+        "@typescript-eslint/parser": "^5.51.0",
         "archiver": "^5.3.1",
-        "eslint": "^8.26.0",
+        "eslint": "^8.33.0",
         "eslint-plugin-svelte3": "^4.0.0",
-        "husky": "^8.0.1",
-        "lint-staged": "^13.0.3",
-        "prettier": "2.7.1",
-        "prettier-plugin-svelte": "^2.8.0",
-        "svelte-check": "^2.9.2",
-        "typescript": "4.7.4"
+        "husky": "^8.0.3",
+        "lint-staged": "^13.1.1",
+        "prettier": "2.8.4",
+        "prettier-plugin-svelte": "^2.9.0",
+        "svelte-check": "^3.0.3",
+        "typescript": "4.9.5"
     },
     "manifest": {
         "host_permissions": [
