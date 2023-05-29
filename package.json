@@ -3,7 +3,7 @@
     "displayName": "With svelte",
     "version": "0.0.0",
     "description": "A basic Plasmo extension.",
-    "author": "lgvic",
+    "author": "Mohammad Apel Mahmod <dev.amahmod@gmail.com>",
     "packageManager": "pnpm@7.5.0",
     "scripts": {
         "format": "prettier --write './src/**/*.{js,svelte,html,ts}'",
